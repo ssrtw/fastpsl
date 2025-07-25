@@ -11,7 +11,7 @@ crate-type = ["cdylib"]
 pyo3 = "0.25.0"
 publicsuffix = "2.3.0"
 dirs = "5.0"
-reqwest = { version = "0.12.22", features = ["blocking"] }
+reqwest = { version = "0.12.12", features = ["blocking", "rustls-tls"] }
 thiserror = "2.0.12"
 psl = "2.1.127"
 regex = "1.11.1"
