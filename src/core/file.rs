@@ -8,7 +8,7 @@ use std::sync::OnceLock;
 static PSL_URL: &str = "https://publicsuffix.org/list/public_suffix_list.dat";
 
 pub(crate) fn load_psl_dat() -> Result<List, PslError> {
-    let mut cache_path = cache_dir().expect("無法建立/定位快取資料夾");
+    let mut cache_path = cache_dir().expect("Failed to create or locate the cache directory");
     cache_path.push("public_suffix_list.dat");
 
     if !cache_path.exists() {
